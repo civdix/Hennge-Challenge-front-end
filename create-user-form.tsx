@@ -70,9 +70,7 @@ function CreateUserForm({ setUserWasCreated }: CreateUserFormProps) {
       const response = await fetch(url, {
         method: "POST", // HTTP method
         headers: {
-          Authorization:
-            "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsicHJpbmNlZGl4aXQ5NzIwOTY1OTg1QGdtYWlsLmNvbSJdLCJpc3MiOiJoZW5uZ2UtYWRtaXNzaW9uLWNoYWxsZW5nZSIsInN1YiI6ImNoYWxsZW5nZSJ9.yN3iktv-gK6QXiGm1imjGdwgxq7e7dkqWGoAl63sii0",
-          "Content-Type": "application/json",
+          Authorization:"Bearer <yourtoken>",          "Content-Type": "application/json",
         },
         body: JSON.stringify(formData),
       });
